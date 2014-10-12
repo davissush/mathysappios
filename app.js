@@ -316,7 +316,7 @@ route();
                         onadd: function(){
                                 var pdfsrc = this.data('iframeurl');
 
-                                PDFViewer.open(pdfsrc, function (msg) {
+                                PDFViewer.open(pdfsrc, "PDF File", function (msg) {
                                         console.log(msg);
                                 });
                         }
