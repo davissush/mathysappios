@@ -186,10 +186,10 @@ route();
 
                 $("input[type='text']").entwine({
                         onfocusin: function(){
-                                $('.bar-tab').css('position', 'inherit');
+                                $('.bar-tab').show();
                         },
                         onfocusout: function(){
-                                $('.bar-tab').css('position', 'fixed');
+                                $('.bar-tab').hide();
                         }
                 });
 
