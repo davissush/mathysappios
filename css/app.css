@@ -1,0 +1,364 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
+.fontArial, .DefaultTypography, body, html {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.DefaultTypography, body, html {
+	font-size: 14px;
+	font-weight: normal;
+	font-variant: normal;
+	font-style: normal;
+}
+
+.no-line {
+	border-top: 0px solid #ddd;
+}
+
+.no-line-top {
+	border-top: 0px solid #ddd;
+	background: none;
+	bottom: 50px;
+	color: #354791;
+	text-align: center;
+	font-size: .9em;
+	line-height: 50px;
+}
+
+.no-line-center {
+	padding-top: 10px;
+	border-top: 0px solid #ddd;
+	color: #354791;
+	text-align: center;
+	font-size: .9em;
+	line-height: 33px;
+}
+
+.lined-center {
+	padding-top: 10px;
+	color: #354791;
+	text-align: center;
+	font-size: .9em;
+	line-height: 33px;
+}
+
+.lined-full {
+	padding-top: 9px;
+	color: #354791;
+	font-size: .9em;
+	line-height: 33px;
+	vertical-align: bottom;
+}
+
+.bar-tab .tab-item.button-orange {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: white;
+}
+.bar-tab .tab-item.button-orange-full {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: white;
+}
+
+.button-orange {
+	background: #ec8316;
+	color: white;
+}
+.button-orange:first-child {
+	border-right: 6px solid white;
+}
+
+.button-orange-full {
+	background: #ec8316;
+	color: white;
+}
+
+.content.mbackground {
+	padding-top: 75px;
+	background-image: url("../images/Backgrounds/bg_640x1136.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+.content .MainTitle {
+	padding-top: 20px;
+	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
+	color: #354791;
+}
+.content .SubTitle {
+	font-size: .9em;
+	text-align: center;
+	color: #354791;
+	padding-bottom: 20px;
+}
+.content form {
+	padding: 0 15px;
+	font-size: .9em;
+}
+.content form select {
+	height: 35px;
+	background: white url("../images/Icons/ic_arrow_down.png") no-repeat right 10px;
+	color: #354791;
+}
+.content form input {
+	font-size: 1em;
+}
+.content form ::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #354791;
+}
+.content form :-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #354791;
+	opacity: 1;
+}
+.content form ::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #354791;
+	opacity: 1;
+}
+.content form :-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #354791;
+}
+
+input[type=checkbox] {
+	vertical-align: inherit;
+}
+
+.header-logo {
+	width: 55px;
+}
+
+.footer-logo {
+	width: 120px;
+}
+
+.center-logo {
+	width: 173px;
+}
+
+.center-div {
+	text-align: center;
+	top: 50%;
+	position: absolute;
+	margin-top: -142px;
+	left: 50%;
+	margin-left: -85px;
+}
+
+.footer-logo-left {
+	width: 120px;
+	padding-left: 10px;
+}
+
+.footer-logo-right {
+	width: 55px;
+	padding-right: 10px;
+}
+
+.bar.mheader {
+	height: 75px;
+	padding: 0;
+}
+.bar .mheader-category {
+	padding-top: 27px;
+	height: 100%;
+}
+.bar .mheader-category a.icon {
+	color: white;
+}
+.bar .mheader-category .title {
+	padding-top: 0px;
+	color: white;
+	font-size: 1.2em;
+	margin: 0 0px;
+}
+.bar.splashheader {
+	height: 70px;
+	border: none;
+	background-color: transparent;
+}
+.bar .title {
+	padding-top: 25px;
+	margin:0;
+}
+
+h1.title.tandc {
+	padding-top: 0;
+}
+
+.bar input[type=checkbox] {
+	vertical-align: inherit;
+	position: absolute;
+	top: 19px;
+	left: 5px;
+	display: none;
+}
+.bar input[type=checkbox] + label:before {
+	content: '.';
+	background-color: #FFFFFF;
+	background-image: url("../images/Icons/ic_tick2.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+	display: block;
+	text-indent: -9999px;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 13px;
+}
+.no-ie9 .bar input[type=checkbox] + label:before {
+	display: none;
+}
+.bar input[type=checkbox]:checked + label:before {
+	background-position: top right;
+}
+
+.OuterTOCheck{
+	text-align: center;
+	line-height: 50px;
+	font-size: .95em;
+}
+
+.TOCCheck input[type=checkbox] {
+	vertical-align: inherit;
+	position: absolute;
+	top: 19px;
+	left: 5px;
+	display: none;
+}
+
+.TOCCheck input[type=checkbox] + label:before {
+	content: '.';
+	background-color: #FFFFFF;
+	background-image: url("../images/Icons/ic_tick2.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+	display: block;
+	text-indent: -9999px;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 13px;
+}
+
+.no-ie9 .TOCCheck input[type=checkbox] + label:before {
+	display: none;
+}
+
+.TOCCheck input[type=checkbox]:checked + label:before {
+	background-position: top right;
+}
+
+.TOCCheck {
+	width: 282px;
+	margin: auto;
+	position: relative;
+}
+.TOCCheck label {
+	cursor: pointer;
+}
+
+.table-view-cell.mediafile {
+	padding: 0;
+	margin: 0;
+}
+.table-view-cell.mediafile a {
+	margin: 0;
+}
+.table-view-cell.mediafile .Left {
+	float: left;
+}
+.table-view-cell.mediafile .Left img {
+	display: block;
+}
+.table-view-cell.mediafile .Right {
+	padding: 5px 10px 0 90px;
+}
+.table-view-cell.mediafile .Right i {
+	font-style: normal;
+	font-size: .95em;
+}
+.table-view-cell.mediafile .navigate-right:after, .table-view-cell.mediafile .push-right:after {
+	right: 15px;
+	content: '';
+}
+
+.content .Home .table-view:first-child {
+	border-top: none;
+	margin-top: 0px;
+}
+.content .Home .MainOptions {
+	height: 100px;
+}
+.content .Home .table-view-cell {
+	padding: 11px 0px 11px 0px;
+}
+.content .Home .table-view-cell > a:not(.btn) {
+	margin: -11px -65px -11px 0px;
+	display: table;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+.content .Home .table-view-cell > a:not(.btn) .OptionTitle {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 18px 10px;
+	font-size: 1.5em;
+	color: white;
+}
+
+.Category .table-view {
+	margin-bottom: 64px;
+}
+.Category .table-view a {
+	color: #ec8316;
+}
+
+.Category .Right i{
+	display:block;
+}
+
+.VideoWrapper{
+	position: relative;
+}
+
+.VideoWrapper img{
+	width: 100%;
+}
+
+.VideoWrapper img.VideoOverlay{
+	position: absolute;
+	top:0;
+}
+
+.bar .mheader-category a.icon:active{
+	color: #ec8316;
+}
+
+.LinkBlocker{
+	background: #EBEBEB;
+	display: block;
+	height: 80px;
+	bottom: 59px;
+	position: fixed;
+	width: 100%;
+	color: #EBEBEB;
+}
+
+.iFrameWrapper iframe{
+	width: 100%;
+	height: 100%;
+}
+
+#page-footer{
+	display:none; !important;
+}
