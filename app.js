@@ -314,12 +314,10 @@ route();
 
                 $('.iFrameWrapper').entwine({
                         onadd: function(){
-                               var iframe = document.createElement("iframe");
-                                iframe.id = 'iFrameID';
-                                iframe.src = this.data('iframeurl');
-                                this.html(iframe);
+                                var pdfsrc = this.data('iframeurl');
 
-                                $("#iFrameID").on("load", function(){
+                                PDFViewer.open(pdfsrc, function (msg) {
+                                        console.log(msg);
                                 });
                         }
                 })
