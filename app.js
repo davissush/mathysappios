@@ -316,9 +316,8 @@ route();
                         onadd: function(){
                                 var pdfsrc = this.data('iframeurl');
 
-                                PDFViewer.open("http://rmsurgeon.com/assets/PDFS/2010-Pakvis-DKOU-FEA.pdf", "PDF File", function (msg) {
-                                        console.log(msg);
-                                });
+                                window.plugins.ChildBrowser.showWebPage(pdfsrc,
+                                        { showLocationBar: true });
                         }
                 })
         });
