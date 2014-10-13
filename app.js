@@ -4,8 +4,8 @@ window.addEventListener('load', function () {
 
 var slider = new PageSlider($("#container"));
 //var remotehost = 'http://mathyscms.edith.techrus.co.nz/'
-var remotehost = 'http://mathys.cms'
-//var remotehost = 'http://rmsurgeon.com/'
+//var remotehost = 'http://mathys.cms'
+var remotehost = 'http://rmsurgeon.com/'
 var spinner = $("#spinner");
 
 spinner.hide();
