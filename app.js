@@ -4,8 +4,8 @@ window.addEventListener('load', function () {
 
 var slider = new PageSlider($("#container"));
 //var remotehost = 'http://mathyscms.edith.techrus.co.nz/'
-//var remotehost = 'http://mathys.cms'
-var remotehost = 'http://rmsurgeon.com/'
+var remotehost = 'http://mathys.cms'
+//var remotehost = 'http://rmsurgeon.com/'
 var spinner = $("#spinner");
 
 spinner.hide();
@@ -315,6 +315,15 @@ route();
                 $('.iFrameWrapper').entwine({
                         onadd: function(){
                                 var pdfsrc = this.data('iframeurl');
+
+                                window.plugins.ChildBrowser.showWebPage(pdfsrc,
+                                        { showLocationBar: true });
+                        }
+                })
+
+                $('.iFrameWrapper .btn-outlined').entwine({
+                        onclick: function(){
+                                var pdfsrc = this.closest('.iFrameWrapper').data('iframeurl');
 
                                 window.plugins.ChildBrowser.showWebPage(pdfsrc,
                                         { showLocationBar: true });
