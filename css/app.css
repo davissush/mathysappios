@@ -6,7 +6,7 @@
 }
 
 .DefaultTypography, body, html {
-	font-size: 14px;
+	font-size: 24px;
 	font-weight: normal;
 	font-variant: normal;
 	font-style: normal;
@@ -19,7 +19,7 @@
 .no-line-top {
 	border-top: 0px solid #ddd;
 	background: none;
-	bottom: 50px;
+	bottom: 85px;
 	color: #354791;
 	text-align: center;
 	font-size: .9em;
@@ -36,11 +36,11 @@
 }
 
 .lined-center {
-	padding-top: 10px;
+	padding-top: 16px;
 	color: #354791;
 	text-align: center;
 	font-size: .9em;
-	line-height: 33px;
+	line-height: 80px;
 }
 
 .lined-full {
@@ -76,14 +76,14 @@
 }
 
 .content.mbackground {
-	padding-top: 75px;
+	padding-top: 100px;
 	background-image: url("../images/Backgrounds/bg_640x1136.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
 }
 .content .MainTitle {
-	padding-top: 20px;
+	padding-top: 40px;
 	font-weight: bold;
 	font-size: 1em;
 	text-align: center;
@@ -93,15 +93,15 @@
 	font-size: .9em;
 	text-align: center;
 	color: #354791;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 }
 .content form {
 	padding: 0 15px;
 	font-size: .9em;
 }
 .content form select {
-	height: 35px;
-	background: white url("../images/Icons/ic_arrow_down.png") no-repeat right 10px;
+	height: 60px;
+	background: white url("../images/Icons/ic_arrow_down.png") no-repeat right 24px;
 	color: #354791;
 }
 .content form input {
@@ -131,11 +131,11 @@ input[type=checkbox] {
 }
 
 .header-logo {
-	width: 55px;
+	width: 80px;
 }
 
 .footer-logo {
-	width: 120px;
+	width: 180px;
 }
 
 .center-logo {
@@ -146,26 +146,27 @@ input[type=checkbox] {
 	text-align: center;
 	top: 50%;
 	position: absolute;
-	margin-top: -142px;
+	margin-top: -250px;
 	left: 50%;
 	margin-left: -85px;
 	display:block;
 }
 
 .footer-logo-left {
-	width: 120px;
+	width: 180px;
 	padding-left: 10px;
 }
 
 .footer-logo-right {
-	width: 55px;
+	width: 85px;
 	padding-right: 10px;
 }
 
 .bar.mheader {
-	height: 75px;
+	height: 100px;
 	padding: 0;
 }
+
 .bar .mheader-category {
 	padding-top: 27px;
 	height: 100%;
@@ -176,6 +177,7 @@ input[type=checkbox] {
 .bar .mheader-category .title {
 	padding-top: 0px;
 	color: white;
+	/*font-size: 2.1em;*/
 	font-size: 1.2em;
 	margin: 0 0px;
 }
@@ -257,7 +259,7 @@ h1.title.tandc {
 }
 
 .TOCCheck {
-	width: 282px;
+	width: 400px;
 	margin: auto;
 	position: relative;
 }
@@ -266,6 +268,13 @@ h1.title.tandc {
 	display: block;
 	line-height: 50px;
 	height: 50px;
+}
+
+.table-view-cell{
+	position: relative;
+	padding: 22px 65px 22px 15px;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
 }
 
 .table-view-cell.mediafile {
@@ -303,6 +312,7 @@ h1.title.tandc {
 .content .Home .table-view-cell {
 	padding: 11px 0px 11px 0px;
 }
+
 .content .Home .table-view-cell > a:not(.btn) {
 	margin: -11px -65px -11px 0px;
 	display: table;
@@ -311,13 +321,15 @@ h1.title.tandc {
 	background-size: cover;
 	background-position: top;
 }
+
 .content .Home .table-view-cell > a:not(.btn) .OptionTitle {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	padding: 18px 10px;
-	font-size: 1.5em;
 	color: white;
+	padding: 70px 10px;
+	font-size: 1.5em;
+	/*font-size: 2.3em;*/
 }
 
 .Category .table-view {
@@ -384,3 +396,194 @@ h1.title.tandc {
 #page-footer{
 	display:none; !important;
 }
+
+@media(max-height: 450px) {
+	.bar-tab{
+		display: none;
+	}
+}
+
+.bar-tab {
+	height: 90px;
+}
+
+select, textarea, input[type="text"], input[type="search"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="tel"], input[type="color"]{
+	width: 100%;
+	height: 60px;
+	-webkit-appearance: none;
+	padding: 0 15px;
+	margin-bottom: 15px;
+	line-height: 60px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	outline: none;
+}
+
+select{
+	font-size: 1.0em;
+}
+
+.bar .icon{
+	position: relative;
+	z-index: 20;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 50px;
+}
+
+@media screen and (max-width: 641px){
+	.bar .icon{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 24px;
+	}
+
+	.content .Home .table-view-cell > a:not(.btn) .OptionTitle {
+		padding: 18px 10px;
+		font-size: 1.5em;
+	}
+
+	.bar.mheader {
+		height: 75px;
+	}
+
+	.content.mbackground{
+		padding-top: 75px;
+	}
+
+	.header-logo {
+		width: 55px;
+	}
+
+	.bar-tab{
+		height: 60px;
+	}
+
+	.footer-logo {
+		width: 120px;
+	}
+
+	.lined-center {
+		padding-top: 10px;
+		font-size: .9em;
+		line-height: 33px;
+	}
+
+	.bar .mheader-category .title{
+		font-size: 1.2em;
+	}
+
+	.footer-logo-left {
+		width: 120px;
+		padding-left: 10px;
+	}
+
+	.footer-logo-right {
+		width: 55px;
+		padding-right: 10px;
+	}
+
+	.DefaultTypography, body, html {
+		font-size: 14px;
+	}
+
+	.table-view-cell{
+		padding: 11px 65px 11px 15px;
+	}
+
+	.center-div {
+		top: 50%;
+		margin-top: -142px;
+		left: 50%;
+		margin-left: -85px;
+	}
+
+	.center-logo {
+		width: 173px;
+	}
+
+	.no-line-top{
+		bottom: 50px;
+		line-height: 50px;
+	}
+
+	.content .MainTitle{
+		padding-top: 20px;
+		font-weight: bold;
+		font-size: 1em;
+		text-align: center;
+		color: #354791;
+	}
+
+	.content .SubTitle{
+		font-size: .9em;
+		text-align: center;
+		color: #354791;
+		padding-bottom: 20px;
+	}
+
+	select, textarea, input[type="text"], input[type="search"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="tel"], input[type="color"]{
+		width: 100%;
+		height: 35px;
+		-webkit-appearance: none;
+		padding: 0 15px;
+		margin-bottom: 15px;
+		line-height: 21px;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		outline: none;
+	}
+
+	.content form select{
+		height: 35px;
+		background: white url("../images/Icons/ic_arrow_down.png") no-repeat right 10px;
+	}
+
+	select{
+		font-size: 14px;
+	}
+
+	.OuterTOCheck {
+		text-align: center;
+		line-height: 50px;
+		font-size: .95em;
+	}
+
+	.TOCCheck {
+		width: 282px;
+		margin: auto;
+		position: relative;
+	}
+
+	.TOCCheck input[type=checkbox] {
+		vertical-align: inherit;
+		position: absolute;
+		top: 19px;
+		left: 5px;
+		display: none;
+	}
+
+	.TOCCheck label {
+		cursor: pointer;
+		display: block;
+		line-height: 50px;
+		height: 50px;
+	}
+
+	select{
+		font-size: 14px;
+	}
+
+	.table-view-cell.mediafile .Left img {
+		display: block;
+		width: 80px;
+	}
+
+}
+
