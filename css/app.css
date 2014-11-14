@@ -383,6 +383,7 @@ h1.title.tandc {
 .iFrameWrapper h4{
 	margin-top: 30px;
 	color: #ec8316;
+	font-size: 1.3em;
 }
 
 .iFrameWrapper button{
@@ -432,6 +433,14 @@ select{
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 50px;
+}
+
+.btn{
+	font-size:.9em;
+}
+
+.iFrameWrapper p {
+	font-size: 1em;
 }
 
 @media screen and (max-width: 641px){
@@ -584,6 +593,5 @@ select{
 		display: block;
 		width: 80px;
 	}
-
 }
 
