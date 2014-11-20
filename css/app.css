@@ -454,7 +454,7 @@ select{
 }
 
 video {
-	min-height: 100%;
+	min-height: 50%;
 	min-width: 100%;
 	height: auto !important;
 	width: auto !important;
