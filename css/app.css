@@ -205,7 +205,6 @@ h1.title.tandc {
 }
 .bar input[type=checkbox] + label:before {
 	content: '.';
-	background-color: #FFFFFF;
 	background-image: url("../images/Icons/ic_tick2.png");
 	background-repeat: no-repeat;
 	background-position: top left;
