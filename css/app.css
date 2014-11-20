@@ -453,6 +453,13 @@ select{
 	padding-top: 100px;
 }
 
+video {
+	min-height: 100%;
+	min-width: 100%;
+	height: auto !important;
+	width: auto !important;
+}
+
 @media screen and (max-width: 641px){
 	.bar .icon{
 		padding-top: 10px;
