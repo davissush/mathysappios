@@ -22,7 +22,10 @@ $('.goback').entwine({
 document.addEventListener("online", onOnline, false);
 
 function onOnline() {
-        if(checkConnection() == "none"){
+        if(checkConnection() == Connection.NONE){
+                alert('No internet connection.');
+                spinner.hide();
+        } else if(checkConnection() == Connection.UNKNOWN) {
                 alert('No internet connection.');
                 spinner.hide();
         }
