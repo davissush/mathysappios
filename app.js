@@ -2,27 +2,6 @@ window.addEventListener('load', function () {
         new FastClick(document.body);
 }, false);
 
-document.addEventListener("online", onOnline, false);
-
-function onOnline() {
-        checkConnection();
-}
-
-function checkConnection() {
-        var networkState = navigator.network.connection.type;
-
-        var states = {};
-        states[Connection.UNKNOWN]  = 'Unknown connection';
-        states[Connection.ETHERNET] = 'Ethernet connection';
-        states[Connection.WIFI]     = 'WiFi connection';
-        states[Connection.CELL_2G]  = 'Cell 2G connection';
-        states[Connection.CELL_3G]  = 'Cell 3G connection';
-        states[Connection.CELL_4G]  = 'Cell 4G connection';
-        states[Connection.NONE]     = 'No network connection';
-
-        alert('Connection type: ' + states[networkState]);
-}
-
 var slider = new PageSlider($("#container"));
 //var remotehost = 'http://mathyscms.edith.techrus.co.nz/'
 //var remotehost = 'http://mathys.cms'
@@ -39,6 +18,30 @@ $('.goback').entwine({
                 parent.history.back();
         }
 });
+
+document.addEventListener("online", onOnline, false);
+
+function onOnline() {
+        if(checkConnection() == "none"){
+                alert('No internet connection.');
+                spinner.hide();
+        }
+}
+
+function checkConnection() {
+        var networkState = navigator.network.connection.type;
+
+        var states = {};
+        states[Connection.UNKNOWN]  = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI]     = 'WiFi connection';
+        states[Connection.CELL_2G]  = 'Cell 2G connection';
+        states[Connection.CELL_3G]  = 'Cell 3G connection';
+        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.NONE]     = 'No network connection';
+
+        return networkState;
+}
 
 function renderhomepage(){
         $.ajax({
@@ -168,7 +171,7 @@ function route(event) {
         spinner.show();
         if(!searchpage.trim()){
 
-                //window.localStorage.removeItem('isregistered');
+                window.localStorage.removeItem('isregistered');
 
                 if(window.localStorage.getItem("isregistered")){
                         renderhomepage();
