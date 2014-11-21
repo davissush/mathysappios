@@ -28,6 +28,8 @@ function onOnline() {
         } else if(checkConnection() == Connection.UNKNOWN) {
                 alert('No internet connection.');
                 spinner.hide();
+        } else {
+                alert('You are connected via: ' + checkConnection());
         }
 }
 
