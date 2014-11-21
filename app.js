@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
 var slider = new PageSlider($("#container"));
 //var remotehost = 'http://mathyscms.edith.techrus.co.nz/'
 //var remotehost = 'http://mathys.cms'
-var remotehost = 'http://rmsurgeon.com/'
+var remotehost = 'http://rmsurgeon.com/';
 var spinner = $("#spinner");
 
 spinner.hide();
@@ -19,7 +19,6 @@ $('.goback').entwine({
         }
 });
 
-
 function renderhomepage(){
         $.ajax({
                 type: 'GET',
@@ -29,12 +28,12 @@ function renderhomepage(){
                 complete: function(){
                 },
                 success: function(data){
-                       if(data){
-                               spinner.hide();
-                               slider.slidePage($(data));
-                       } else {
-                               renderhomepage2();
-                       }
+                        if(data){
+                                spinner.hide();
+                                slider.slidePage($(data));
+                        } else {
+                                renderhomepage2();
+                        }
                 }
         });
 }
@@ -148,7 +147,7 @@ function route(event) {
         spinner.show();
         if(!searchpage.trim()){
 
-               //window.localStorage.removeItem('isregistered');
+                //window.localStorage.removeItem('isregistered');
 
                 if(window.localStorage.getItem("isregistered")){
                         renderhomepage();
@@ -184,14 +183,21 @@ route();
                         }
                 });
 
-                $("input[type='text']").entwine({
-                        onfocusin: function(){
-                                $('.bar-tab').hide();
-                        },
-                        onfocusout: function(){
-                                $('.bar-tab').show();
+                $("input[name='Name']").entwine({
+                        onclick: function(){
+
                         }
                 });
+
+//                $("input[type='text']").entwine({
+//                        onfocusin: function(){
+//                                var height = $(window).height();
+//                                $('.bar-tab').hide();
+//                        },
+//                        onfocusout: function(){
+//                                $('.bar-tab').show();
+//                        }
+//                });
 
                 $("#TermsAndCondition").entwine({
                         onclick: function(e){
@@ -205,9 +211,15 @@ route();
                         }
                 });
 
+                var bodyheight = 0;
+
                 $(".TOCCheckLabel").entwine({
+                        onadd: function(){
+                                bodyheight = $(window).height();
+                        },
                         onclick: function(){
                                 this.closest('.TOCCheck').find('.checkbox').trigger('click');
+                                $('body').height(bodyheight);
                         }
                 });
 
@@ -316,8 +328,8 @@ route();
                         onadd: function(){
                                 var pdfsrc = this.data('iframeurl');
 
-                                window.plugins.ChildBrowser.showWebPage(pdfsrc,
-                                        { showLocationBar: true });
+                                //var browser = window.open(pdfsrc, '_blank', 'location=no');
+                                window.plugins.ChildBrowser.openExternal(pdfsrc);
                         }
                 })
 
@@ -325,8 +337,8 @@ route();
                         onclick: function(){
                                 var pdfsrc = this.closest('.iFrameWrapper').data('iframeurl');
 
-                                window.plugins.ChildBrowser.showWebPage(pdfsrc,
-                                        { showLocationBar: true });
+                                //var browser = window.open(pdfsrc, '_blank', 'location=yes');
+                                window.plugins.ChildBrowser.openExternal(pdfsrc);
                         }
                 })
         });
