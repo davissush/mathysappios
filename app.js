@@ -22,33 +22,38 @@ $('.goback').entwine({
 document.addEventListener("online", onOnline, false);
 
 function onOnline() {
-        if(checkConnection() == 0){
-                alert('No internet connection.');
-                spinner.hide();
-        } else if(checkConnection() == "none") {
-                alert('No internet connection.');
-                spinner.hide();
-        } else if(checkConnection() == "unknown") {
-                alert('No internet connection.');
-                spinner.hide();
-        } else {
-                alert('You are connected via: ' + checkConnection());
-        }
+        checkConnection();
 }
 
 function checkConnection() {
-        var networkState = navigator.network.connection.type;
 
-        var states = {};
-        states[Connection.UNKNOWN]  = 'Unknown connection';
-        states[Connection.ETHERNET] = 'Ethernet connection';
-        states[Connection.WIFI]     = 'WiFi connection';
-        states[Connection.CELL_2G]  = 'Cell 2G connection';
-        states[Connection.CELL_3G]  = 'Cell 3G connection';
-        states[Connection.CELL_4G]  = 'Cell 4G connection';
-        states[Connection.NONE]     = 'No network connection';
+        setTimeout(function(){
 
-        return networkState;
+                var networkState = navigator.network.connection.type;
+
+                var states = {};
+                states[Connection.UNKNOWN]  = 'Unknown connection';
+                states[Connection.ETHERNET] = 'Ethernet connection';
+                states[Connection.WIFI]     = 'WiFi connection';
+                states[Connection.CELL_2G]  = 'Cell 2G connection';
+                states[Connection.CELL_3G]  = 'Cell 3G connection';
+                states[Connection.CELL_4G]  = 'Cell 4G connection';
+                states[Connection.NONE]     = 'No network connection';
+
+                if(networkState == 0){
+                        alert('No internet connection.');
+                        spinner.hide();
+                } else if(networkState == "none") {
+                        alert('No internet connection.');
+                        spinner.hide();
+                } else if(networkState == "unknown") {
+                        alert('No internet connection.');
+                        spinner.hide();
+                } else {
+                        alert('You are connected via: ' + networkState);
+                }
+
+        }, 500);
 }
 
 function renderhomepage(){
