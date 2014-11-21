@@ -19,6 +19,7 @@ $('.goback').entwine({
         }
 });
 
+document.addEventListener("deviceready", onOnline, false);
 document.addEventListener("online", onOnline, false);
 
 function onOnline() {
