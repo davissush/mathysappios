@@ -54,7 +54,7 @@ function checkConnection() {
                         alert('You are connected via: ' + networkState);
                 }
 
-        }, 500);
+        }, 300);
 }
 
 function renderhomepage(){
