@@ -51,7 +51,7 @@ function checkConnection() {
                         alert('No internet connection.');
                         spinner.hide();
                 } else {
-                        alert('You are connected via: ' + networkState);
+//                        alert('You are connected via: ' + networkState);
                 }
 
         }, 300);
