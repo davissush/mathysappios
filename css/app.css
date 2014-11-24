@@ -26,6 +26,7 @@
 	text-align: center;
 	font-size: .9em;
 	line-height: 50px;
+	z-index: 9999;
 }
 
 .no-line-center {
@@ -77,12 +78,16 @@
 	color: white;
 }
 
-.content.mbackground {
-	padding-top: 100px;
+body{
 	background-image: url("../images/Backgrounds/bg_640x1136.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
+}
+
+.content.mbackground {
+	padding-top: 100px;
+	background-color: transparent;
 }
 .content .MainTitle {
 	padding-top: 40px;
