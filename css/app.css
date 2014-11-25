@@ -474,11 +474,12 @@ video {
 
 @media screen and (max-width: 641px){
 	.bar .icon{
-		padding-top: 10px;
-		padding-bottom: 10px;
+		margin-top: 20px;
+		margin-bottom: 10px;
 		padding-left: 10px;
 		padding-right: 10px;
 		font-size: 24px;
+		padding-bottom: 0;
 	}
 
 	.modal.active .bar-nav{
@@ -487,12 +488,13 @@ video {
 	}
 
 	.modal.active .bar-nav ~ .content {
-		padding-top: 44px;
+		padding-top: 55px;
+		background-color: transparent;
 	}
 
 	h1.title.tandc {
-		padding-top: 0;
-		font-size: .7em;
+		padding-top: 9px;
+		font-size: 1.2em;
 	}
 
 	.content .Home .table-view-cell > a:not(.btn) .OptionTitle {
