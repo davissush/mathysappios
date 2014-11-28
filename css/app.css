@@ -86,7 +86,7 @@ body{
 }
 
 .content.mbackground {
-	padding-top: 100px;
+	padding-top: 109px;
 	background-color: transparent;
 }
 .content .MainTitle {
@@ -138,15 +138,15 @@ input[type=checkbox] {
 }
 
 .header-logo {
-	width: 80px;
+	width: 122px;
 }
 
 .footer-logo {
-	width: 180px;
+	width: 205px;
 }
 
 .center-logo {
-	width: 173px;
+	width: 225px;
 }
 
 .center-div {
@@ -170,7 +170,7 @@ input[type=checkbox] {
 }
 
 .bar.mheader {
-	height: 100px;
+	height: 110px;
 	padding: 0;
 }
 
@@ -194,7 +194,7 @@ input[type=checkbox] {
 	background-color: transparent;
 }
 .bar .title {
-	padding-top: 25px;
+	padding-top: 10px;
 	margin:0;
 }
 
@@ -305,7 +305,8 @@ h1.title.tandc {
 	display: block;
 }
 .table-view-cell.mediafile .Right {
-	padding: 5px 10px 0 90px;
+	padding: 15px 10px 0 125px;
+	line-height: 1.2em;
 }
 .table-view-cell.mediafile .Right i {
 	font-style: normal;
@@ -511,7 +512,7 @@ video {
 	}
 
 	.header-logo {
-		width: 55px;
+		width: 80px;
 	}
 
 	.bar-tab{
@@ -519,7 +520,7 @@ video {
 	}
 
 	.footer-logo {
-		width: 120px;
+		width: 155px;
 	}
 
 	.lined-center {
