@@ -185,7 +185,8 @@ function route(event) {
         spinner.show();
         if(!searchpage.trim()){
 
-                window.localStorage.removeItem('isregistered');
+                // Testing Block. Remove if testing
+                //window.localStorage.removeItem('isregistered');
 
                 if(window.localStorage.getItem("isregistered")){
                         renderhomepage();
