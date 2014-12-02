@@ -257,7 +257,8 @@ route();
                                 console.log('height');
                                 bodyheight = $(window).height();
                         },
-                        onclick: function(){
+                        onclick: function(e){
+                                e.preventDefault();
                                 console.log(bodyheight);
                                 this.closest('.TOCCheck').find('.checkbox').trigger('click');
                                 $('body').height(bodyheight);
