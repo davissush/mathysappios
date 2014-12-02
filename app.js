@@ -186,7 +186,7 @@ function route(event) {
         if(!searchpage.trim()){
 
                 // Testing Block. Remove if testing
-                //window.localStorage.removeItem('isregistered');
+                window.localStorage.removeItem('isregistered');
 
                 if(window.localStorage.getItem("isregistered")){
                         renderhomepage();
@@ -258,8 +258,9 @@ route();
                         },
                         onclick: function(e){
                                 e.preventDefault();
+                                console.log('test');
+                                this.closest('.TOCCheck').find('.checkbox').trigger('click');
                                 if(pareseFloat(window.device.version) >= 7.0){
-                                        this.closest('.TOCCheck').find('.checkbox').trigger('click');
                                         $('body').height(bodyheight);
                                 }
                         }
