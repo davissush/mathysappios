@@ -254,9 +254,11 @@ route();
 
                 $(".TOCCheckLabel").entwine({
                         onadd: function(){
+                                console.log('height');
                                 bodyheight = $(window).height();
                         },
                         onclick: function(){
+                                console.log(bodyheight);
                                 this.closest('.TOCCheck').find('.checkbox').trigger('click');
                                 $('body').height(bodyheight);
                         }
