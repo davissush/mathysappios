@@ -254,14 +254,14 @@ route();
 
                 $(".TOCCheckLabel").entwine({
                         onadd: function(){
-                                console.log('height');
                                 bodyheight = $(window).height();
                         },
                         onclick: function(e){
                                 e.preventDefault();
-                                console.log(bodyheight);
-                                this.closest('.TOCCheck').find('.checkbox').trigger('click');
-                                $('body').height(bodyheight);
+                                if(pareseFloat(window.device.version) >= 7.0){
+                                        this.closest('.TOCCheck').find('.checkbox').trigger('click');
+                                        $('body').height(bodyheight);
+                                }
                         }
                 });
 

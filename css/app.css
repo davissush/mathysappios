@@ -413,11 +413,11 @@ h1.title.tandc {
 	display:none; !important;
 }
 
-/*@media(max-height: 450px) {*/
-/*.bar-tab{*/
-/*display: none;*/
-/*}*/
-/*}*/
+@media(max-height: 450px) {
+	.bar-tab{
+		display: none;
+	}
+}
 
 .bar-tab {
 	height: 90px;
