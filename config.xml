@@ -59,6 +59,8 @@
     <preference name="android-targetSdkVersion"   value="14" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
     <preference name="UIWebViewBounce" value="false" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#CCCCCC" />
 
     <!-- Plugins -->
 
@@ -85,6 +87,7 @@
     <gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" />
     <gap:plugin name="com.kernix.pdfviewer" version="1.1.0" />
     <gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" />
+    <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
 
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
