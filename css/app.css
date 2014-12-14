@@ -475,7 +475,7 @@ video {
 
 @media screen and (max-width: 641px){
 	.bar .icon{
-		margin-top: 20px;
+		margin-top: 0px;
 		margin-bottom: 10px;
 		padding-left: 10px;
 		padding-right: 10px;
@@ -486,6 +486,10 @@ video {
 	.modal.active .bar-nav{
 		height: auto;
 		padding-top: 0;
+	}
+
+	.table-view-cell.mediafile .Right {
+		padding: 10px 5px 0 83px;
 	}
 
 	.modal.active .bar-nav ~ .content {
@@ -531,6 +535,7 @@ video {
 
 	.bar .mheader-category .title{
 		font-size: 1.2em;
+		line-height: 1.5em;
 	}
 
 	.footer-logo-left {
