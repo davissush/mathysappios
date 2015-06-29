@@ -138,11 +138,12 @@ input[type=checkbox] {
 }
 
 .header-logo {
-	width: 122px;
+	width: 251px;
+	margin-top: -10px;
 }
 
 .footer-logo {
-	width: 205px;
+	width: 121px;
 }
 
 .center-logo {
@@ -516,7 +517,8 @@ video {
 	}
 
 	.header-logo {
-		width: 80px;
+		width: 170px;
+		margin-top: -10px;
 	}
 
 	.bar-tab{
@@ -524,7 +526,7 @@ video {
 	}
 
 	.footer-logo {
-		width: 155px;
+		width: 81px;
 	}
 
 	.lined-center {
