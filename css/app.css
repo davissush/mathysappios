@@ -142,8 +142,17 @@ input[type=checkbox] {
 	margin-top: -10px;
 }
 
+.header-logo.registration {
+    width: 122px;
+    margin-top: 0;
+}
+
 .footer-logo {
 	width: 121px;
+}
+
+.footer-logo.intropage {
+    width: 205px;
 }
 
 .center-logo {
@@ -521,6 +530,11 @@ video {
 		margin-top: -10px;
 	}
 
+    .header-logo.registration {
+        width: 80px;
+        margin-top: 0;
+    }
+
 	.bar-tab{
 		height: 60px;
 	}
@@ -528,6 +542,10 @@ video {
 	.footer-logo {
 		width: 81px;
 	}
+
+    .footer-logo.intropage {
+        width: 155px;
+    }
 
 	.lined-center {
 		padding-top: 10px;
