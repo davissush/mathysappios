@@ -186,7 +186,7 @@ function route(event) {
         if(!searchpage.trim()){
 
                 // Testing Block. Remove if testing
-                window.localStorage.removeItem('isregistered');
+                // window.localStorage.removeItem('isregistered');
 
                 if(window.localStorage.getItem("isregistered")){
                         renderhomepage();
